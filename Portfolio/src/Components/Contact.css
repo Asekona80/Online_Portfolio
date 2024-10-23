@@ -1,0 +1,52 @@
+.contact-form {
+    max-width: 400px; /* Reduced max-width for a narrower form */
+    width: 100%;
+    background: linear-gradient(to right, #62cff4, #0b85d6); /* Gradient background */
+    padding: 20px;
+    border-radius: 15px; /* Increased radius for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Center the form horizontally */
+    float: left; /* Optional: float the form to the left */
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #fff; /* White text for labels for contrast */
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px; /* Round borders for input fields */
+    font-size: 16px;
+    transition: border-color 0.3s ease; /* Smooth transition for border color on focus */
+  }
+  
+  .input-field:focus {
+    border-color: #08549C; /* Change this to your focus color */
+    outline: none;
+  }
+  
+  .submit-button {
+    background-color: #08549C; /* Button color */
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 15px; /* Round borders for the button */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #011F4B; /* Darker shade on hover */
+    transform: scale(1.05); /* Scale effect on hover */
+  }
+  

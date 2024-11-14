@@ -26,27 +26,27 @@
     border: 1px solid #ccc;
     border-radius: 15px; /* Round borders for input fields */
     font-size: 16px;
-    transition: border-color 0.3s ease; /* Smooth transition for border color on focus */
+    transition: border-color 0.3s ease; 
   }
   
   .input-field:focus {
-    border-color: #08549C; /* Change this to your focus color */
+    border-color: #08549C; 
     outline: none;
   }
   
   .submit-button {
-    background-color: #08549C; /* Button color */
+    background-color: #08549C; 
     color: #fff;
     padding: 10px 15px;
     border: none;
-    border-radius: 15px; /* Round borders for the button */
+    border-radius: 15px; 
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
   }
   
   .submit-button:hover {
-    background-color: #011F4B; /* Darker shade on hover */
-    transform: scale(1.05); /* Scale effect on hover */
+    background-color: #011F4B; 
+    transform: scale(1.05);
   }
   

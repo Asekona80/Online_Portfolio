@@ -39,6 +39,25 @@
 .face.top { transform: rotateX(90deg) translateZ(250px); } /* Updated translateZ */
 .face.bottom { transform: rotateX(-90deg) translateZ(250px); } /* Updated translateZ */
 
+/* Work.css */
 
+.cube img {
+    width: 80%;            /* Set width to 100% of the parent */
+    height: 150px;          /* Set a consistent height for each image */
+    object-fit: cover;      /* Ensures the image covers the space without distortion */
+    border-radius: 8px;     /* Optional: adds rounded corners */
+  }
+  
+  .cube .face {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+  }
 
-
+  .icon-links {
+    display: flex;
+    gap: 10px; /* Adds space between icons */
+    justify-content: center;
+    margin-top: 8px;
+  }

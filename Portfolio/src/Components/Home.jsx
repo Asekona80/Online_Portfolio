@@ -50,7 +50,7 @@ const Home = () => {
       id="home"
       className="text-black h-screen"
       style={{
-        backgroundImage: 'linear-gradient(to bottom, #C9F6FF, #CCF9FF, #7CE8FF, #55D0FF, #00ACDF, #0080BF)' // Updated gradient
+        backgroundImage: 'linear-gradient(to bottom, #C9F6FF, #CCF9FF, #7CE8FF,#CCF9FF , #55D0FF, #00ACDF, #0080BF)' // Updated gradient
       }}
     >
       <div className="max-w-full h-full max-auto justify-between items-center px-4 flex flex-col md:flex-row mx-10">

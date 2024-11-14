@@ -60,7 +60,7 @@ const Cube = () => {
           <h3>{projects[0].title}</h3>
           <div className="icon-links">
             <a href={projects[0].github} target="_blank" rel="noopener noreferrer">
-              <FaGithub />
+              <FaGithub size={25}/>
             </a>
           </div>
         </div>
@@ -69,10 +69,10 @@ const Cube = () => {
           <h3>{projects[1].title}</h3>
           <div className="icon-links">
             <a href={projects[1].github} target="_blank" rel="noopener noreferrer">
-              <FaGithub  />
+              <FaGithub size={25} />
             </a>
             <a href={projects[1].live} target="_blank" rel="noopener noreferrer">
-              <FaExternalLinkAlt />
+              <FaExternalLinkAlt size={25} />
             </a>
           </div>
         </div>
@@ -81,10 +81,10 @@ const Cube = () => {
           <h3>{projects[2].title}</h3>
           <div className="icon-links">
             <a href={projects[2].github} target="_blank" rel="noopener noreferrer">
-              <FaGithub />
+              <FaGithub  size={25} />
             </a>
             <a href={projects[2].live} target="_blank" rel="noopener noreferrer">
-              <FaExternalLinkAlt />
+              <FaExternalLinkAlt size={25} />
             </a>
           </div>
         </div>
@@ -93,10 +93,10 @@ const Cube = () => {
           <h3>{projects[3].title}</h3>
           <div className="icon-links">
             <a href={projects[3].github} target="_blank" rel="noopener noreferrer">
-              <FaGithub />
+              <FaGithub size={25} />
             </a>
             <a href={projects[3].live} target="_blank" rel="noopener noreferrer">
-              <FaExternalLinkAlt />
+              <FaExternalLinkAlt size={25} />
             </a>
           </div>
         </div>
@@ -105,10 +105,10 @@ const Cube = () => {
           <h3>{projects[4].title}</h3>
           <div className="icon-links">
             <a href={projects[4].github} target="_blank" rel="noopener noreferrer">
-              <FaGithub />
+              <FaGithub size={25}/>
             </a>
             <a href={projects[4].live} target="_blank" rel="noopener noreferrer">
-              <FaExternalLinkAlt />
+              <FaExternalLinkAlt size={25} />
             </a>
           </div>
         </div>
@@ -117,10 +117,10 @@ const Cube = () => {
           <h3>{projects[5].title}</h3>
           <div className="icon-links">
             <a href={projects[5].github} target="_blank" rel="noopener noreferrer">
-              <FaGithub />
+              <FaGithub size={25} />
             </a>
             <a href={projects[5].live} target="_blank" rel="noopener noreferrer">
-              <FaExternalLinkAlt />
+              <FaExternalLinkAlt size={25}/>
             </a>
           </div>
         </div>

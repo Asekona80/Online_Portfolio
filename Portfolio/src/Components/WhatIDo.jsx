@@ -8,7 +8,7 @@ const WhatIDo = () => {
 
   const content = "A passionate and driven software developer and application developer with a commitment to creating innovative solutions for real-world challenges. Extensive experience in various programming languages enables the ability to tackle complex problems effectively and contribute meaningfully to projects. With a solid educational background and hands-on experience in software development.";
 
-  const experience = "I have worked on various projects involving web and mobile applications, primarily utilizing React, React Native, and Expo. I also have experience in backend development with Node.js and databases such as MongoDB and MySQL. In addition, I have developed applications using Java, Python, C#, and Flutter with Dart. My front-end skills include proficiency in HTML, CSS, and JavaScript. I have actively participated in Agile development processes, contributing to both front-end and back-end tasks, ensuring efficient collaboration and timely project delivery.";
+  const experience = "I have worked on various projects involving web and mobile applications, primarily utilizing React.js, React Native, and Expo. I also have experience in backend development with Node.js and databases such as MongoDB and MySQL. In addition, I have developed applications using Java, Python, C#, and Flutter with Dart. My front-end skills include proficiency in HTML, CSS, and JavaScript. I have actively participated in Agile development processes, contributing to both front-end and back-end tasks, ensuring efficient collaboration and timely project delivery.";
 
   const downloadCV = () => {
     const link = document.createElement('a');

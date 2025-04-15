@@ -9,7 +9,7 @@ const Navbar = () => {
   };
 
   const handleSmoothScroll = (e, targetId) => {
-    e.preventDefault();
+    e.preventDefault();  // Prevent default anchor link behavior
     const target = document.querySelector(targetId);
     target?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -58,11 +58,12 @@ const Navbar = () => {
           </button>
         </div>
 
+        {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden bg-transparent text-center mt-2 space-y-2">
+          <div className="md:hidden bg-transparent text-center mt-2 space-y-2 transition-all duration-500 ease-in-out">
             <a href="#home" onClick={(e) => handleSmoothScroll(e, '#home')} className="block text-[#0080BF] font-bold p-2 hover:bg-gray-700 transition duration-300">Home</a>
             <a href="#what-i-do" onClick={(e) => handleSmoothScroll(e, '#what-i-do')} className="block text-[#0080BF] font-bold p-2 hover:bg-gray-700 transition duration-300">What I Do</a>
-            <a href="#work" onClick={(e) => handleSmoothScroll(e, '#work')} className="block text-[#0080BF] font-bold hover:bg-gray-700 transition duration-300">Work</a>
+            <a href="#work" onClick={(e) => handleSmoothScroll(e, '#work')} className="block text-[#0080BF] font-bold p-2 hover:bg-gray-700 transition duration-300">Work</a>
             <a href="#contact" onClick={(e) => handleSmoothScroll(e, '#contact')} className="block text-[#0080BF] font-bold p-2 hover:bg-gray-700 transition duration-300">Contact</a>
           </div>
         )}
@@ -72,7 +73,7 @@ const Navbar = () => {
       {showScrollUp && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-5 right-5 p-2 rounded-full bg-[#2dbcd8] text-white shadow-md hover:bg-[#0080BF] transition duration-300"
+          className="fixed bottom-5 right-5 p-2 rounded-full bg-[#2dbcd8] text-white shadow-md hover:bg-[#0080BF] transition duration-300 opacity-90 hover:opacity-100"
         >
           <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
             <path fillRule="evenodd" d="M10 18a1 1 0 01-.707-.293l-7-7a1 1 0 011.414-1.414L10 15.586l6.293-6.293a1 1 0 111.414 1.414l-7 7A1 1 0 0110 18z" clipRule="evenodd" />
@@ -80,7 +81,7 @@ const Navbar = () => {
         </button>
       )}
     </>
-  ); 
+  );
 };
 
 export default Navbar;

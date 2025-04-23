@@ -1,22 +1,22 @@
 import React, { useState } from 'react';
-import { FaReact, FaPython, FaJava, FaDatabase, FaJs, FaNodeJs } from 'react-icons/fa';
+import { FaReact, FaPython, FaJava, FaDatabase, FaJs, FaNodeJs, FaMicrosoft, FaFlask, FaFigma } from 'react-icons/fa';
 import { SiFigma, SiTailwindcss, SiMongodb, SiMysql, SiCss3, SiHtml5, SiNextdotjs, SiExpo } from 'react-icons/si';
 import aboutImage from '../assets/abt.png';
 
 const WhatIDo = () => {
   const [showMore, setShowMore] = useState(false);
 
-  const content = "A passionate and driven software developer and application developer with a commitment to creating innovative solutions for real-world challenges. Extensive experience in various programming languages enables the ability to tackle complex problems effectively and contribute meaningfully to projects. With a solid educational background and hands-on experience in software development.";
+  const content = "A highly motivated software and application developer with a strong passion for solving real-world problems through innovative solutions. I have extensive experience across multiple programming languages and platforms, enabling me to effectively tackle complex challenges and contribute to the success of projects. With a solid educational foundation and practical experience in web and mobile development, I am committed to continuously enhancing my skills to deliver high-quality software solutions.";
 
-  const experience = "I have worked on various projects involving web and mobile applications, primarily utilizing React.js, React Native, and Expo. I also have experience in backend development with Node.js and databases such as MongoDB and MySQL. In addition, I have developed applications using Java, Python, C#, and Flutter with Dart. My front-end skills include proficiency in HTML, CSS, and JavaScript. I have actively participated in Agile development processes, contributing to both front-end and back-end tasks, ensuring efficient collaboration and timely project delivery.";
+  const experience = "I have worked on a wide range of web and mobile application projects using React.js, React Native, and Expo. My backend development experience includes working with Node.js and managing data with MongoDB and MySQL. I have also built applications using Java, Python, C Sharp, and Flutter with Dart. On the front end, I have strong skills in HTML, CSS, JavaScript, and Tailwind CSS for building responsive user interfaces. In addition to this, I have developed business solutions with the Microsoft Power Platform, including Power Apps (Canvas and Model-driven), Power Automate, and Dataverse, and have integrated them with SharePoint and custom logic using JSON and JavaScript. I regularly work in Agile environments and contribute to both front-end and back-end tasks to ensure effective collaboration and on-time delivery.";
 
   const downloadCV = () => {
     const link = document.createElement('a');
-    link.href = '/assets/Asekona-Xanywa_CV.pdf'; 
-    link.download = 'Asekona-Xanywa_CV.pdf';
+    link.href = './assets/CV_OfAsekona.pdf';  // Path relative to the public folder
+    link.download = 'CV_OfAsekona.pdf';
     link.click();
   };
-
+  
   return (
     <section
       id="what-i-do"
@@ -125,6 +125,15 @@ const WhatIDo = () => {
             </div>
             <div className="p-2">
               <SiExpo size={50} className="text-black hover:text-indigo-500 transition-colors" />
+            </div>
+            <div className="p-2">
+              <FaMicrosoft size={50} className="text-black hover:text-indigo-500 transition-colors" />
+            </div>
+            <div className="p-2">
+              <FaFlask size={50} className="text-black hover:text-indigo-500 transition-colors" />
+            </div>
+            <div className="p-2">
+              <FaFigma size={50} className="text-black hover:text-indigo-500 transition-colors" />
             </div>
           </div>
         </div>

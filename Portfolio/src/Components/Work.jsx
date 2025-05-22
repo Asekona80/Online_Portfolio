@@ -3,7 +3,7 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import Medi from '../assets/medi-pic.jpg';
 import Health from '../assets/healthCare.png';
 import journal from '../assets/journal.png';
-import chatApp from '../assets/chatapp.jpg';
+import chatApp from '../assets/tetris.jpg';
 
 import './Work.css'; 
 

@@ -12,7 +12,7 @@ const Cube = () => {
     {
       title: '',
       image: Medi, 
-      github: 'https://github.com/Asekona80/my-app',
+      live: 'axclinicwebsite.netlify.app',
     },
     {
       title: ' ',
@@ -40,9 +40,9 @@ const Cube = () => {
     },
     {
       title: 'Project 6',
-      image: './assets.chatApp,png', 
+      image: './assets.tetris.jpg', 
       github: 'https://github.com/yourusername/project6',
-      live: 'https://yourwebsite.com/project6',
+      live: 'https://asegame-86928a.netlify.app/',
     },
   ];
 

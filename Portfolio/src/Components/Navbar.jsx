@@ -48,7 +48,7 @@ const Navbar = () => {
             <a href="#contact" onClick={(e) => handleSmoothScroll(e, '#contact')} className="text-[#03254c] hover:text-white transition">Contact</a>
           </div>
 
-          <button onClick={toggleMenu} className="md:hidden text-[#0080BF] focus:outline-none">
+          <button onClick={toggleMenu} className="md:hidden text-[#03254c] focus:outline-none">
             {isOpen ? (
               <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />

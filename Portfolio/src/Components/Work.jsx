@@ -62,6 +62,9 @@ const Cube = () => {
             <a href={projects[0].github} target="_blank" rel="noopener noreferrer">
               <FaGithub size={25}/>
             </a>
+            <a href={projects[1].live} target="_blank" rel="noopener noreferrer">
+              <FaExternalLinkAlt size={25} />
+            </a>
           </div>
         </div>
         <div className="face back">

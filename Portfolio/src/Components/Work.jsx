@@ -4,6 +4,8 @@ import Medi from '../assets/medi-pic.jpg';
 import Health from '../assets/healthCare.png';
 import journal from '../assets/journal.png';
 import chatApp from '../assets/tetris.jpg';
+import canvasApp from '../assets/canvasApp.png'; 
+import info from '../assets/Info.png';
 
 import './Work.css';
 
@@ -33,14 +35,19 @@ const Projects = () => {
       github: 'https://github.com/yourusername/project6',
       live: 'https://asegame-86928a.netlify.app/',
     },
-     {
-      title: 'License App',
-      image: chatApp,
-      github: 'https://github.com/yourusername/project6',
-      live: 'https://asegame-86928a.netlify.app/',
+    {
+      title: 'License App (Power Apps)',
+      image: canvasApp,
+      github: '',
+      live: '',
+    },
+    {
+      title: 'Inforshare',
+      image: info,
+      github: '',
+      live: 'https://infosharesa.co.za/',
     },
   ];
-
 
   return (
     <section

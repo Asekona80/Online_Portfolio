@@ -61,3 +61,20 @@
     justify-content: center;
     margin-top: 8px;
   }
+
+  /* Work.css */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section#work {
+  background-color: #f9fafb;
+}
+
+.card img {
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}

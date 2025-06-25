@@ -42,10 +42,10 @@ const Navbar = () => {
           <div className="text-[#03254c] font-bold text-3xl tracking-wide">A.X</div>
 
           <div className="hidden md:flex space-x-8 text-lg font-semibold">
-            <a href="#home" onClick={(e) => handleSmoothScroll(e, '#home')} className="text-[#03254c] hover:text-white transition">Home</a>
-            <a href="#what-i-do" onClick={(e) => handleSmoothScroll(e, '#what-i-do')} className="text-[#03254c] hover:text-white transition">What I Do</a>
-            <a href="#work" onClick={(e) => handleSmoothScroll(e, '#work')} className="text-[#03254c] hover:text-white transition">Work</a>
-            <a href="#contact" onClick={(e) => handleSmoothScroll(e, '#contact')} className="text-[#03254c] hover:text-white transition">Contact</a>
+            <a href="#home" onClick={(e) => handleSmoothScroll(e, '#home')} className="text-[#03254c] hover:text-blue transition">Home</a>
+            <a href="#what-i-do" onClick={(e) => handleSmoothScroll(e, '#what-i-do')} className="text-[#03254c] hover:text-blue transition">What I Do</a>
+            <a href="#work" onClick={(e) => handleSmoothScroll(e, '#work')} className="text-[#03254c] hover:text-blue transition">Work</a>
+            <a href="#contact" onClick={(e) => handleSmoothScroll(e, '#contact')} className="text-[#03254c] hover:text-blue transition">Contact</a>
           </div>
 
           <button onClick={toggleMenu} className="md:hidden text-[#03254c] focus:outline-none">

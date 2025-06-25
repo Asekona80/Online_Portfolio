@@ -19,7 +19,7 @@ const Navbar = () => {
   const handleScroll = () => {
     const scrollTop = window.scrollY;
     setShowScrollUp(scrollTop > 200);
-    setIsScrolled(scrollTop > 10); // Trigger shadow after small scroll
+    setIsScrolled(scrollTop > 10); 
   };
 
   const scrollToTop = () => {

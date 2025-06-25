@@ -7,6 +7,7 @@ import chatApp from '../assets/tetris.jpg';
 import canvasApp from '../assets/canvasApp.png'; 
 import Info from '../assets/Info.png';
 
+
 import './Work.css';
 
 const Projects = () => {

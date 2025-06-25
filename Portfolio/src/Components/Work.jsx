@@ -5,7 +5,7 @@ import Health from '../assets/healthCare.png';
 import journal from '../assets/journal.png';
 import chatApp from '../assets/tetris.jpg';
 import canvasApp from '../assets/canvasApp.png'; 
-import info from '../assets/Info.png';
+import Info from '../assets/Info.png';
 
 import './Work.css';
 
@@ -43,7 +43,7 @@ const Projects = () => {
     },
     {
       title: 'Inforshare',
-      image: info,
+      image: Info,
       github: '',
       live: 'https://infosharesa.co.za/',
     },

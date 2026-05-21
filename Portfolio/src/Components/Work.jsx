@@ -1,10 +1,16 @@
 import React from 'react';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+
 import Medi from '../assets/medi-pic.jpg';
 import Health from '../assets/healthCare.png';
 import journal from '../assets/journal.png';
 import chatApp from '../assets/tetris.jpg';
-import canvasApp from '../assets/canvasApp.png'; 
+import canvasApp from '../assets/canvasApp.png';
+import info from '../assets/Info.png'; // ✅ fixed lowercase import
+import powerbi1 from '../assets/powerbi1.png';
+import powerbi2 from '../assets/powerbi2.png';
+import powerbi3 from '../assets/powerbi3.png';
+
 import './Work.css';
 
 const Projects = () => {
@@ -39,6 +45,30 @@ const Projects = () => {
       github: '',
       live: '',
     },
+    {
+      title: 'InfoShare',
+      image: info, // ✅ FIXED HERE
+      github: '',
+      live: 'https://infosharesa.co.za/',
+    },
+    {
+  title: 'Credit Note Solution(Power BI)',
+  image: powerbi1, // screenshot of dashboard
+  github: '',
+   live: '/Powerbi/credit-note.pdf', // PDF export of Power BI report
+},
+{
+  title: 'Overall Scoring (Power BI)',
+  image: powerbi2,
+  github: '',
+  live: '/Powerbi/overallAssessment.pdf',
+},
+{
+  title: 'Employee Perfomance Report (Power BI)',
+  image: powerbi3,
+  github: '',
+  live: '/Powerbi/employee-performance.pdf',
+}
   ];
 
   return (
@@ -46,7 +76,9 @@ const Projects = () => {
       id="work"
       className="py-16 px-4 min-h-screen bg-gradient-to-b from-white via-blue-100 to-blue-200 text-gray-900"
     >
-      <h2 className="text-4xl font-bold text-center mb-12 underline">My Projects</h2>
+      <h2 className="text-4xl font-bold text-center mb-12 underline">
+        My Projects
+      </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {projects.map((project, index) => (
@@ -59,8 +91,12 @@ const Projects = () => {
               alt={project.title}
               className="w-full h-48 object-cover"
             />
+
             <div className="p-4">
-              <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+              <h3 className="text-xl font-semibold mb-2">
+                {project.title}
+              </h3>
+
               <div className="flex items-center space-x-4">
                 {project.github && (
                   <a
@@ -72,6 +108,7 @@ const Projects = () => {
                     <FaGithub size={24} />
                   </a>
                 )}
+
                 {project.live && (
                   <a
                     href={project.live}

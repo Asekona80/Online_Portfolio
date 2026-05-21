@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { AiOutlineGithub, AiFillLinkedin } from "react-icons/ai";
-import { FaPython, FaJava, FaReact, FaHtml5, FaCss3,FaFigma,FaMicrosoft,FaFlask } from "react-icons/fa";
+import { FaPython, FaJava, FaReact, FaHtml5, FaCss3, FaFigma, FaMicrosoft, FaFlask } from "react-icons/fa";
 import { SiTailwindcss, SiMysql, SiFirebase, SiMongodb } from "react-icons/si";
 import hero from '../assets/hero.png';
 
 const roles = [
   "SOFTWARE DEVELOPER",
-  "MICROSOFT POWER PLATFORM DEVELOPER",
-  "WEB DEVELOPER"
+  "POWER PLATFORM DEVELOPER",
+  "FULL-STACK WEB DEVELOPER"
 ];
 
 const Home = () => {
@@ -16,7 +16,7 @@ const Home = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentRole((prev) => (prev + 1) % roles.length);
-    }, 3000); // Change every 3 seconds
+    }, 3000);
     return () => clearInterval(interval);
   }, []);
 
@@ -29,44 +29,74 @@ const Home = () => {
       }}
     >
       <div className="max-w-7xl w-full px-4 mx-auto flex flex-col-reverse md:flex-row justify-between items-center">
+
         {/* LEFT CONTENT */}
         <div className="md:w-1/2 mt-10 md:mt-0 text-center md:text-left">
-          <p className="italic text-xl text-[#0f0f0f]">HI THERE</p>
+
+          <p className="italic text-xl text-[#0f0f0f]">HI THERE 👋 I AM</p>
+
           <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl mt-2 text-[#0c0c0c] animate-text-slide">
-            I'M ASEKONA XANYWA
+            ASEKONA XANYWA
           </h1>
 
-          {/* Rotating Titles */}
+          {/* Role */}
           <div className="h-[40px] mt-4 overflow-hidden relative">
-            <p className="text-2xl md:text-3xl font-semibold text-[#030303] fade-in">
+            <p className="text-2xl md:text-3xl font-semibold text-[#030303]">
               {roles[currentRole]}
             </p>
           </div>
 
+          {/* 🔥 VALUE STATEMENT (NEW - IMPORTANT) */}
+          <p className="mt-6 text-lg text-[#111] max-w-xl">
+            I build modern web, mobile, and business applications using React, Node.js,
+            and Microsoft Power Platform. Focused on delivering real-world business solutions.
+          </p>
+
+          {/* 🔥 CTA BUTTONS (VERY IMPORTANT FOR HIRING) */}
+          <div className="flex gap-4 mt-6 justify-center md:justify-start">
+
+            <a
+              href="#work"
+              className="bg-black text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition"
+            >
+              View My Work
+            </a>
+
+            <a
+              href="/CV/Cv_Of_Asekona_Xanywa.pdf"
+              download
+              className="border border-black px-6 py-2 rounded-lg hover:bg-black hover:text-white transition"
+            >
+              Download CV
+            </a>
+
+          </div>
+
           {/* Icons */}
           <div className="flex justify-center md:justify-start mt-6 space-x-4 animate-icons">
-            <AiOutlineGithub size={30} className="text-[#050505]" />
-            <AiFillLinkedin size={30} className="linkedin-icon" />
+            <AiOutlineGithub size={30} />
+            <AiFillLinkedin size={30} />
           </div>
 
           {/* Tech Stack */}
           <div className="mt-8">
-            <p className="font-medium text-xl md:text-2xl text-[#030303] mb-3">TECH STACK:</p>
+            <p className="font-medium text-xl md:text-2xl mb-3">
+              TECH STACK:
+            </p>
+
             <div className="flex flex-wrap justify-center md:justify-start gap-4 animate-icon-slide">
-              <FaPython size={30} className="floating-bounce python-icon[#a55d2c]" />
-              <FaJava size={30} className="floating-bounce text-[#462c8b]" />
-              <FaReact size={30} className="floating-bounce react-icon" />
-              <SiTailwindcss size={30} className="floating-bounce tailwindcss" />
-              <FaHtml5 size={30} className="floating-bounce text-[#a55d2c]" />
-              <FaCss3 size={30} className="floating-bounce text-[#295179]" />
-              <SiMysql size={30} className="floating-bounce text-[#462c8b]" />
-              <SiMongodb size={30} className="floating-bounce text-[#3acf35]" />
-              <SiFirebase size={30} className="floating-bounce firebase-icon" />
-              <FaFigma size={30} className="floating-bounce text-[#462c8b]" />
-              <FaMicrosoft size={30} className="floating-bounce text-[#462c8b]" />
-              <FaFlask size={30} className="floating-bounce text-[#462c8b]" />
+
+              <FaReact size={30} />
+              <SiTailwindcss size={30} />
+              <FaMicrosoft size={30} />
+              <SiMongodb size={30} />
+              <SiMysql size={30} />
+              <FaPython size={30} />
+              <FaJava size={30} />
+
             </div>
           </div>
+
         </div>
 
         {/* RIGHT IMAGE */}
@@ -77,6 +107,7 @@ const Home = () => {
             className="h-64 md:h-[400px] object-contain"
           />
         </div>
+
       </div>
     </section>
   );

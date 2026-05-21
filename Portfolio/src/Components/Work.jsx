@@ -6,7 +6,7 @@ import Health from '../assets/healthCare.png';
 import journal from '../assets/journal.png';
 import chatApp from '../assets/tetris.jpg';
 import canvasApp from '../assets/canvasApp.png';
-import info from '../assets/Info.png'; // ✅ fixed lowercase import
+import info from '../assets/Info.png';
 import powerbi1 from '../assets/powerbi1.png';
 import powerbi2 from '../assets/powerbi2.png';
 import powerbi3 from '../assets/powerbi3.png';
@@ -39,12 +39,14 @@ const Projects = () => {
       github: 'https://github.com/yourusername/project6',
       live: 'https://asegame-86928a.netlify.app/',
     },
-    {
-      title: 'License App (Power Apps)',
-      image: canvasApp,
-      github: '',
-      live: '',
-    },
+ {
+  title: 'License Application System (Power Apps)',
+  image: canvasApp,
+  github: '',
+  live: '',
+  tags: ['Power Apps', 'Dataverse', 'Business Solution', 'Workflow Automation'],
+  description: 'Enterprise license management application built using Microsoft Power Apps to streamline business approval and tracking processes.',
+},
     {
       title: 'InfoShare',
       image: info, // ✅ FIXED HERE
@@ -55,19 +57,19 @@ const Projects = () => {
   title: 'Credit Note Solution(Power BI)',
   image: powerbi1, // screenshot of dashboard
   github: '',
-   live: '/Powerbi/credit-note.pdf', // PDF export of Power BI report
+  live: '/Powerbi/credit-note.pdf', // PDF export of Power BI report
 },
 {
   title: 'Overall Scoring (Power BI)',
   image: powerbi2,
   github: '',
-  live: '/Powerbi/overallAssessment.pdf',
+  live: '/Powerbi/overall.pdf',
 },
 {
   title: 'Employee Perfomance Report (Power BI)',
   image: powerbi3,
   github: '',
-  live: '/Powerbi/employee-performance.pdf',
+  live: '/Powerbi/employee.pdf',
 }
   ];
 

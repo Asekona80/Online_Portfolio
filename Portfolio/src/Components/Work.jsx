@@ -1,15 +1,7 @@
+
+
 import React from 'react';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
-
-import Medi from '../assets/medi-pic.jpg';
-import Health from '../assets/healthCare.png';
-import journal from '../assets/journal.png';
-import chatApp from '../assets/tetris.jpg';
-import canvasApp from '../assets/canvasApp.png';
-import info from '../assets/Info.png';
-import powerbi1 from '../assets/powerbi1.png';
-import powerbi2 from '../assets/powerbi2.png';
-import powerbi3 from '../assets/powerbi3.png';
 
 import './Work.css';
 
@@ -17,60 +9,69 @@ const Projects = () => {
   const projects = [
     {
       title: 'Machubeni Clinic Website',
-      image: Medi,
+      image: '/Images/medi-pic.jpg',
       github: 'https://github.com/Asekona80/Clinic-WEB',
       live: 'https://axclinicwebsite.netlify.app/',
     },
     {
       title: 'Journal / Diary Web App',
-      image: journal,
+      image: '/Images/journal.png',
       github: 'https://github.com/Asekona80/Luhle-Siya',
       live: 'https://luhle-siya.netlify.app/',
     },
     {
       title: 'Kuyasa Health Services',
-      image: Health,
+      image: '/Images/healthCare.png',
       github: 'https://github.com/Asekona80/Kuyasa-Health-services',
       live: 'https://keen-tapioca-29c1f9.netlify.app/',
     },
     {
       title: 'Tetris Game',
-      image: chatApp,
+      image: '/Images/tetris.jpg',
       github: 'https://github.com/yourusername/project6',
       live: 'https://asegame-86928a.netlify.app/',
     },
- {
-  title: 'License Application System (Power Apps)',
-  image: canvasApp,
-  github: '',
-  live: '',
-  tags: ['Power Apps', 'Dataverse', 'Business Solution', 'Workflow Automation'],
-  description: 'Enterprise license management application built using Microsoft Power Apps to streamline business approval and tracking processes.',
-},
+
     {
-      title: 'InfoShare',
-      image: info, // ✅ FIXED HERE
+      title: 'License Application System (Power Apps)',
+      image: '/Images/canvasApp.png',
+      github: '',
+      live: '',
+      tags: ['Power Apps', 'Dataverse', 'Power Automate', 'Business Solution'],
+      description:
+        'Enterprise license management system built using Microsoft Power Apps to automate approvals and workflows.',
+    },
+
+    {
+      title: 'InfoShare Platform',
+      image: '/Images/Info.png',
       github: '',
       live: 'https://infosharesa.co.za/',
     },
+
     {
-  title: 'Credit Note Solution(Power BI)',
-  image: powerbi1, // screenshot of dashboard
-  github: '',
-  live: '/Powerbi/credit-note.pdf', // PDF export of Power BI report
-},
-{
-  title: 'Overall Scoring (Power BI)',
-  image: powerbi2,
-  github: '',
-  live: '/Powerbi/overall.pdf',
-},
-{
-  title: 'Employee Perfomance Report (Power BI)',
-  image: powerbi3,
-  github: '',
-  live: '/Powerbi/employee.pdf',
-}
+      title: 'Credit Note Solution (Power BI)',
+      image: '/Images/powerbi1.png',
+      github: '',
+      live: '/Powerbi/credit-note.pdf',
+      tags: ['Power BI', 'Data Analytics', 'Reporting'],
+    },
+
+    {
+      title: 'Overall Scoring Dashboard (Power BI)',
+      image: '/Images/powerbi2.png',
+      github: '',
+      live: '/Powerbi/Overall.pdf',
+      tags: ['Power BI', 'HR Analytics'],
+    },
+
+    {
+      title: 'Employee Performance Report (Power BI)',
+      image: '/Images/powerbi3.png',
+      github: '',
+      live: '/Powerbi/employee.pdf',
+      tags: ['Power BI', 'Performance Tracking'],
+    },
   ];
 
   return (
@@ -86,18 +87,37 @@ const Projects = () => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 cursor-pointer"
+            className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 hover:scale-105"
           >
             <img
               src={project.image}
               alt={project.title}
-              className="w-full h-48 object-cover"
+              className="w-full h-48 object-cover rounded-t-2xl"
             />
 
             <div className="p-4">
               <h3 className="text-xl font-semibold mb-2">
                 {project.title}
               </h3>
+
+              {project.description && (
+                <p className="text-sm text-gray-600 mb-2">
+                  {project.description}
+                </p>
+              )}
+
+              {project.tags && (
+                <div className="flex flex-wrap gap-2 mb-3">
+                  {project.tags.map((tag, i) => (
+                    <span
+                      key={i}
+                      className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              )}
 
               <div className="flex items-center space-x-4">
                 {project.github && (
@@ -107,7 +127,7 @@ const Projects = () => {
                     rel="noopener noreferrer"
                     className="text-gray-700 hover:text-black"
                   >
-                    <FaGithub size={24} />
+                    <FaGithub size={22} />
                   </a>
                 )}
 
@@ -118,7 +138,7 @@ const Projects = () => {
                     rel="noopener noreferrer"
                     className="text-gray-700 hover:text-black"
                   >
-                    <FaExternalLinkAlt size={24} />
+                    <FaExternalLinkAlt size={22} />
                   </a>
                 )}
               </div>

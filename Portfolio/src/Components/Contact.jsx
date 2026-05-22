@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaFileDownload, FaDiscord, FaLinkedin, FaEnvelope } from 'react-icons/fa';
-import gif from '../assets/contact-gif.gif';
+const gif = "/Images/contact-gif.gif";
 
 const Contact = () => {
   return (

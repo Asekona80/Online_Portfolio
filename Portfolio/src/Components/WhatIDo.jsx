@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaReact, FaPython, FaJava, FaDatabase, FaJs, FaNodeJs, FaMicrosoft, FaFlask, FaFigma } from 'react-icons/fa';
 import { SiFigma, SiTailwindcss, SiMongodb, SiMysql, SiCss3, SiHtml5, SiNextdotjs, SiExpo } from 'react-icons/si';
-import aboutImage from '../assets/abt.png';
+const aboutImage = "/Images/abt.png";
 
 const WhatIDo = () => {
   const [showMore, setShowMore] = useState(false);
@@ -19,12 +19,12 @@ const experience = `
 • Worked in Agile teams to deliver real-world solutions aligned with business needs and user requirements.
 `;
 
-;  const downloadCV = () => {
-    const link = document.createElement('a');
-    link.href = '../assets/CvofAsekonaXanywa.pdf'; 
-    link.download = 'CvofAsekonaXanywa.pdf';
-    link.click();
-  };
+const downloadCV = () => {
+  const link = document.createElement("a");
+  link.href = "/CV/CvofAsekonaXanywa.pdf";
+  link.download = "CvofAsekonaXanywa.pdf";
+  link.click();
+};
   
   return (
     <section

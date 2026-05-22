@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { AiOutlineGithub, AiFillLinkedin } from "react-icons/ai";
 import { FaPython, FaJava, FaReact, FaHtml5, FaCss3, FaFigma, FaMicrosoft, FaFlask } from "react-icons/fa";
 import { SiTailwindcss, SiMysql, SiFirebase, SiMongodb } from "react-icons/si";
-import hero from '../assets/hero.png';
+const hero = "/Images/hero.png";
 
 const roles = [
   "SOFTWARE DEVELOPER",
